@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import AddCharacter from './CreateCharacter'
 
 const AllCharactersPage = () => {
   const [characters, setCharacters] = useState([])
@@ -31,6 +32,7 @@ const AllCharactersPage = () => {
           </li>
         ))}
       </ul>
+      <AddCharacter />
     </>
   )
 }
